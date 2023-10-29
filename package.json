@@ -1,0 +1,39 @@
+{
+  "name": "p-express",
+  "version": "1.0.0",
+  "description": "express + login + GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "db": "docker-compose -f ./docker-compose.yml up -d",
+    "db:down": "docker-compose -f ./docker-compose.yml down",
+    "start": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeorm": "typeorm-ts-node-commonjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/to-gather/p-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/to-gather/p-express/issues"
+  },
+  "homepage": "https://github.com/to-gather/p-express#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "g": "^2.0.1",
+    "nodemon": "^3.0.1",
+    "pg": "^8.4.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.3.17"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^16.11.10",
+    "ts-node": "10.7.0",
+    "typescript": "4.5.2"
+  }
+}
